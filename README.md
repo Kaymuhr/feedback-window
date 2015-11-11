@@ -1,19 +1,15 @@
-#Adaptive Modal by Pete R.
+#Feedback form
+Based on Adaptive Modal by [Pete R.](http://www.thepetedesign.com).
 Adaptive modal will let you create a modal window that can be morphed from any elements on your website into a beautifully animate modal windows. 
 
-
-Created by [Pete R.](http://www.thepetedesign.com), Founder of [Travelistly](http://www.travelistly.com) and [BucketListly](http://www.bucketlistly.com)
 
 License: [Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/deed.en_US)
 
 [![Adaptive Modal](http://www.thepetedesign.com/images/adaptive-modal_image.png "Adaptive Modal")](http://www.thepetedesign.com/demos/adaptive-modal_demo.html)
 
 
-## Demo
-[View demo](http://www.thepetedesign.com/demos/adaptive-modal_demo.html)
-
 ## Compatibility
-Modern browsers such as Chrome, Firefox, and Safari on both desktop and mobile have been tested. Not tested on IE.
+Modern browsers such as Chrome, Firefox, and Safari on both desktop and mobile have been tested. Not currently working on IE.
 
 ## Basic Usage
 To use this plugin, simply include the latest jQuery library (preferably version 2.0.0 or higher) together with `jquery.adaptive-modal.js` and `adaptive-modal.css` into your document's `<head>` follow by an HTML markup as follows:
@@ -27,61 +23,7 @@ To use this plugin, simply include the latest jQuery library (preferably version
 
 ````
 
-Surprise, surprise, that's all you have to do. Follow the HTML markup shown above without calling any JS function and the modal will morphed from this link when trigger. The content inside `data-title` will be used on the modal window. The `data-title` also supports HTML tags.
 
-
-## Show Existing Content
-Instead of storing your content inside `data-title`, you can have them separately in another div container and reference the id of that container in the `href` attribute like this:
-
-````html
-<body>
-  ..
-  <a href="#form" data-toggle="adaptive-modal">...</a>
-  <form id="form">
-    ..
-  </form>
-  ..
-</body>
-
-````
-
-## Show Remote Content
-You can utilize the built-in ajax request by simply define the AJAX URL inside `href` attribute and add `data-remote="true"` to the markup:
-
-````html
-<body>
-  ..
-  <a href="http://www.remote-ajax-url.com" data-type=".." data-datatype=".." data-remote="true" data-toggle="adaptive-modal">...</a>
-  ..
-</body>
-
-````
-
-You can also define your own ajax type and datatype with data-type and data-datatype attributes respectively.
-
-## Custom Class Names On Each Modal
-You can define your own class name in case you want to customize the modal for each link by following the markup below:
-
-````html
-<body>
-  ..
-  <a href="#" data-toggle="adaptive-modal" data-title="..." data-am-custom-class="custom-class-name">...</a>
-  ..
-</body>
-
-````
-
-## Custom BG Color On Show
-You can define your own background color instead of using the link background color by default by simply adding the data-am-custom-bgcolor attribute to your markup:
-
-````html
-<body>
-  ..
-  <a href="#" data-toggle="adaptive-modal" data-title="..." data-am-custom-bgcolor="#000">...</a>
-  ..
-</body>
-
-````
 
 ## Via Javascript
 You can initiate the function with javascript instead of an HTML markup in case you want to define global options you want to apply to all links.
@@ -155,7 +97,3 @@ You can close the modal programmatically by calling this function as shown below
   $(".am-remote-link").closeModal()
 ````
 
-If you want to see more of my plugins, visit [The Pete Design](http://www.thepetedesign.com/#plugins), or follow me on [Twitter](http://www.twitter.com/peachananr) and [Github](http://www.github.com/peachananr).
-
-## Other Resources
-- Tutorial (Coming Soon)
